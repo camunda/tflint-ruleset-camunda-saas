@@ -1,4 +1,4 @@
-module github.com/terraform-linters/tflint-ruleset-template
+module github.com/terraform-linters/tflint-ruleset-camunda-cloud
 
 go 1.18
 
