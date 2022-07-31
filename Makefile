@@ -8,4 +8,4 @@ build:
 
 install: build
 	mkdir -p ~/.tflint.d/plugins
-	mv ./tflint-ruleset-camunda-cloud ~/.tflint.d/plugins
+	mv ./tflint-ruleset-camunda-saas ~/.tflint.d/plugins
