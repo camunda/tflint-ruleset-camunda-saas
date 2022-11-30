@@ -48,11 +48,19 @@ The change was verified, tested and deployed to the following stages:
 - [ ] Integration
 - [ ] Production
 
+Security tests:
+
+- [ ] Vulnerability scan
+- [ ] Penetration test
+
+_Which security tests are mandetory or optional depends on the complexity label, see the [secure development policy](https://confluence.camunda.com/display/ISMS/P11+-+Secure+Software+Development#P11SecureSoftwareDevelopment-Phase1:ChangeDiscovery) for more information_
+
 ## Definition of Ready - Checklist
 
 _Not all items need to be done depending on the issue._
 
 - [ ] the issue has a meaningful title, description and testable acceptance criteria
 - [ ] risks and mitigations are identified
+- [ ] Added a complexity label following the [secure development policy](https://confluence.camunda.com/display/ISMS/P11+-+Secure+Software+Development#P11SecureSoftwareDevelopment-Phase1:ChangeDiscovery)
 - [ ] unclear requirements have been broken down into separate issues (always make progress)
 - [ ] discussed with the team
