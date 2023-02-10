@@ -1,8 +1,9 @@
-<!-- Please follow the [Code Review Guidelines](https://confluence.camunda.com/display/HAN/Code+Review+Guidelines). -->
+<!--
+Please explain the changes you made here and if applicable supply supporting
+material like screenshots, links to preview environments, etc.
 
-## Describe your changes
-
-<!-- Please explain the changes you made here and if applicable supply supporting material like screenshots, links to preview environments, etc. -->
+Please follow the [Code Review Guidelines](https://confluence.camunda.com/display/HAN/Code+Review+Guidelines).
+-->
 
 ## Related issues
 
