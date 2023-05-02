@@ -2,4 +2,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
   "postUpdateOptions": ["gomodTidy"],
+  "schedule": ["before 5:00am every monday"],
 }
