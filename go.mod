@@ -1,6 +1,6 @@
 module github.com/terraform-linters/tflint-ruleset-camunda-saas
 
-go 1.19
+go 1.21
 
 require (
 	github.com/hashicorp/hcl/v2 v2.18.0
