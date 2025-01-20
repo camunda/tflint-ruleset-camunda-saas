@@ -2,7 +2,7 @@ module github.com/terraform-linters/tflint-ruleset-camunda-saas
 
 go 1.23
 
-toolchain go1.23.4
+toolchain go1.23.5
 
 require (
 	github.com/hashicorp/hcl/v2 v2.23.0
