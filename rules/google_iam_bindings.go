@@ -28,7 +28,7 @@ func (r *GoogleIamAuthoritative) Severity() tflint.Severity {
 }
 
 func (r *GoogleIamAuthoritative) Link() string {
-	return "https://github.com/camunda-cloud/tflint-ruleset-camunda-saas/blob/master/docs/rules/camunda_gcp_iam_authoritative.md"
+	return "https://github.com/camunda/tflint-ruleset-camunda-saas/blob/master/docs/rules/camunda_gcp_iam_authoritative.md"
 }
 
 func (r *GoogleIamAuthoritative) Check(runner tflint.Runner) error {

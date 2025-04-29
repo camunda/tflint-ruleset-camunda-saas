@@ -15,7 +15,7 @@ Then, enable it with:
 plugin "camunda-saas" {
   enabled = true
   version = "v1.1.0"
-  source  = "github.com/camunda-cloud/tflint-ruleset-camunda-saas"
+  source  = "github.com/camunda/tflint-ruleset-camunda-saas"
 }
 ```
 
@@ -47,7 +47,7 @@ Open the [documentation](./docs/README.md) to get the list of rules.
    plugin "camunda-saas" {
      enabled = true
      version = "vX.Y.Z"
-     source  = "github.com/camunda-cloud/tflint-ruleset-camunda-saas"
+     source  = "github.com/camunda/tflint-ruleset-camunda-saas"
    }
    ```
 

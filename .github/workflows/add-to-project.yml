@@ -15,7 +15,7 @@ jobs:
     name: Add issue to project
     runs-on: ubuntu-latest
     steps:
-      - uses: camunda-cloud/action-add-to-project@v1
+      - uses: camunda/action-add-to-project@v1
         with:
           project-alias: sre
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
