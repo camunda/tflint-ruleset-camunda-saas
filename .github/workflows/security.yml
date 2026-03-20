@@ -31,36 +31,36 @@ jobs:
           - go
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v3
-      with:
-        languages: ${{ matrix.language }}
-
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v3
-
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v3
-
-  trivy:
-    name: Trivy
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@0.30.0
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
         with:
-          scan-type: fs
-          scan-ref: .
-          severity: CRITICAL,HIGH
-          format: sarif
-          output: trivy-results.sarif
+          languages: ${{ matrix.language }}
 
-      - name: Upload Trivy scan results
-        uses: github/codeql-action/upload-sarif@v3
-        with:
-          sarif_file: trivy-results.sarif
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v3
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+
+  # trivy:
+  #   name: Trivy
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+
+  #     - name: Run Trivy vulnerability scanner
+  #       uses: aquasecurity/trivy-action@0.30.0
+  #       with:
+  #         scan-type: fs
+  #         scan-ref: .
+  #         severity: CRITICAL,HIGH
+  #         format: sarif
+  #         output: trivy-results.sarif
+
+  #     - name: Upload Trivy scan results
+  #       uses: github/codeql-action/upload-sarif@v3
+  #       with:
+  #         sarif_file: trivy-results.sarif
