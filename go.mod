@@ -7,6 +7,7 @@ toolchain go1.24.2
 require (
 	github.com/hashicorp/hcl/v2 v2.23.0
 	github.com/terraform-linters/tflint-plugin-sdk v0.22.0
+	github.com/zclconf/go-cty v1.16.0
 )
 
 require (
@@ -25,7 +26,6 @@ require (
 	github.com/oklog/run v1.1.0 // indirect
 	github.com/vmihailenco/msgpack/v5 v5.3.5 // indirect
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
-	github.com/zclconf/go-cty v1.16.0 // indirect
 	golang.org/x/mod v0.30.0 // indirect
 	golang.org/x/net v0.48.0 // indirect
 	golang.org/x/sync v0.19.0 // indirect

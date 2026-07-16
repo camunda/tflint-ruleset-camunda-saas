@@ -44,16 +44,12 @@ func (r *GoogleIamAuthoritative) Check(runner tflint.Runner) error {
 		}
 
 		for _, resource := range resources.Blocks {
-			err = runner.EnsureNoError(err, func() error {
-				return runner.EmitIssue(
-					r,
-					fmt.Sprintf("'%s' is a dangerous resource, are you sure you want to use it?",
-						resource.Labels[0]),
-					resource.DefRange,
-				)
-			})
-
-			if err != nil {
+			if err := runner.EmitIssue(
+				r,
+				fmt.Sprintf("'%s' is a dangerous resource, are you sure you want to use it?",
+					resource.Labels[0]),
+				resource.DefRange,
+			); err != nil {
 				return err
 			}
 		}

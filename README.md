@@ -14,14 +14,14 @@ Then, enable it with:
 ```hcl
 plugin "camunda-saas" {
   enabled = true
-  version = "v1.1.0"
+  version = "v1.4.0"
   source  = "github.com/camunda/tflint-ruleset-camunda-saas"
 }
 ```
 
 ## Rules
 
-Open the [documentation](./docs/README.md) to get the list of rules.
+Open the [documentation](./docs/rules/README.md) to get the list of rules.
 
 
 ## Development
