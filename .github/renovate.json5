@@ -11,7 +11,7 @@
 
   "labels": ["renovate"],
 
-  "schedule": ["before 5:00am every monday"],
+  "schedule": ["before 5:00am on monday"],
 
   "postUpdateOptions": [
     // Cleanup go.mod/go.sum after an upgrade
