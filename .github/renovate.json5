@@ -40,7 +40,7 @@
 
   "vulnerabilityAlerts": {
     "enabled": true,
-    "labels": ["🔐 security"],
+    "addLabels": ["🔐 security"],
     "packageRules": [
       {
         // Renovate doesn't propose updates for indirect Go dependencies by
@@ -51,6 +51,7 @@
         "matchManagers": ["gomod"],
         "matchDepTypes": ["indirect"],
         "enabled": true,
+        "groupName": "go-plugin transport dependencies",
       },
     ],
   },
