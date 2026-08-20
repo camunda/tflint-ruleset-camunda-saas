@@ -36,24 +36,26 @@
       ],
       "groupName": "go-plugin transport dependencies",
     },
+    {
+      // Renovate doesn't propose updates for indirect Go dependencies by
+      // default (they normally only move via a direct dependency bump +
+      // `go mod tidy`). Make an exception so CVEs in transitive deps (like
+      // the grpc/x-net bumps combined in PR #86) get picked up automatically.
+      "matchManagers": ["gomod"],
+      "matchDepTypes": ["indirect"],
+      "enabled": true,
+    },
   ],
 
   "vulnerabilityAlerts": {
     "enabled": true,
     "addLabels": ["🔐 security"],
-    "packageRules": [
-      {
-        // Renovate doesn't propose updates for indirect Go dependencies by
-        // default (they normally only move via a direct dependency bump +
-        // `go mod tidy`). Make an exception for security fixes so CVEs in
-        // transitive deps (like the grpc/x-net bumps combined in PR #86)
-        // get picked up automatically instead of needing a manual PR.
-        "matchManagers": ["gomod"],
-        "matchDepTypes": ["indirect"],
-        "enabled": true,
-        "groupName": "go-plugin transport dependencies",
-      },
-    ],
+    // Renovate forces groupName back to null by default for vulnerability
+    // PRs, which would split a multi-package CVE fix (e.g. grpc + x-net)
+    // into several PRs. Group all security PRs together instead of trying
+    // to scope this per package - vulnerabilityAlerts config isn't matched
+    // per packageRule, so it can't be scoped to just the go-plugin stack.
+    "groupName": "security updates",
   },
 
   "stopUpdatingLabel": "stop-updating",
