@@ -53,7 +53,7 @@ Security tests:
 - [ ] Vulnerability scan
 - [ ] Penetration test
 
-_Which security tests are mandetory or optional depends on the complexity label, see the [Security Testing Requirements](https://lamppost.camunda-it.rocks/isms/#standards/security_testing_requirements.md~h-1-software-development) for more information_
+_Which security tests are mandatory or optional depends on the complexity label, see the [Security Testing Requirements](https://lamppost.camunda-it.rocks/isms/#standards/security_testing_requirements.md~h-1-software-development) for more information_
 
 ## Definition of Ready - Checklist
 
